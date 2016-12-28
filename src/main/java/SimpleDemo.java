@@ -7,5 +7,10 @@ public class SimpleDemo {
         List<String> shapeList = Arrays.asList("rectangle", "square", "triangle");
         Observable<String> observableString = Observable.from(shapeList);
         observableString.subscribe(new SimpleObserver());
+
+        Observable<Integer> values = Observable.range(0, 3);
+        values
+            .count()
+            .subscribe(new SimpleSubscriber("count"));
     }
 }

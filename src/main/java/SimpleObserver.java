@@ -13,4 +13,8 @@ public class SimpleObserver implements Observer<String> {
     public void onNext(String s) {
         System.out.println(s);
     }
+
+   // public void count(int i) {
+   //     System.out.println(i);
+   // }
 }
